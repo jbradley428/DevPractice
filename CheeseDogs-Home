@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<!--Begin HEAD-->
+  <head>
+    
+    <title>CheeseDog - Home</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Bootstrap CSS -->
+
+<!--Begin Styles-->
+    <style type="text/css">
+    /*Why is it beneficial to have a styles section in the head of a bootstrap doc?  I thought that just meant it took up more space?*/
+
+    /* Color List:
+      Dark Turquoise -  #009999
+      Yellow - #FFFF66
+      Turquoise - #66CCCC
+      Light Turquoise - #00CCCC
+      Light Brown - #CC9900
+      Lavender - #996699
+      Dark Beige - #FFCC99
+      Cream - #FFFFCC
+      */
+
+
+        .container{
+          /*background: #009999; /* Dark Turquoise */
+          font-family: cursive;
+          color: #FFFF66; /* Yellow */
+          background: rgb(0,153,153); /* Old browsers */
+          background: -moz-linear-gradient(top,  rgba(0,153,153,1) 11%, rgba(0,204,204,1) 55%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(11%,rgba(0,153,153,1)), color-stop(55%,rgba(0,204,204,1))); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top,  rgba(0,153,153,1) 11%,rgba(0,204,204,1) 55%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top,  rgba(0,153,153,1) 11%,rgba(0,204,204,1) 55%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top,  rgba(0,153,153,1) 11%,rgba(0,204,204,1) 55%); /* IE10+ */
+          background: linear-gradient(to bottom,  rgba(0,153,153,1) 11%,rgba(0,204,204,1) 55%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009999', endColorstr='#00cccc',GradientType=0 ); /* IE6-9 */
+
+
+
+        }
+/* BEGIN LABEL STYLING */       
+
+    /* Begin Page-Wide Border Styling on Labels */
+        /*.ridge{
+          border: solid 0 0 4px 0 #66CCCC; /* Turquoise */
+          /*border-style: groove;
+        }
+    /* End Page-Wide Border Styling on Labels */
+
+    /* Begin Page Header*/
+        .span12{
+          /*background: #FFFFCC; /* Cream */
+          /*background: rgb(255,255,221); /* Old browsers */
+          /*background: -moz-linear-gradient(left,  rgba(255,255,221,1) 7%, rgba(255,255,173,1) 50%, rgba(255,255,221,1) 93%); /* FF3.6+ */
+         /* background: -webkit-gradient(linear, left top, right top, color-stop(7%,rgba(255,255,221,1)), color-stop(50%,rgba(255,255,173,1)), color-stop(93%,rgba(255,255,221,1))); /* Chrome,Safari4+ */
+         /* background: -webkit-linear-gradient(left,  rgba(255,255,221,1) 7%,rgba(255,255,173,1) 50%,rgba(255,255,221,1) 93%); /* Chrome10+,Safari5.1+ */
+         /* background: -o-linear-gradient(left,  rgba(255,255,221,1) 7%,rgba(255,255,173,1) 50%,rgba(255,255,221,1) 93%); /* Opera 11.10+ */
+         /* background: -ms-linear-gradient(left,  rgba(255,255,221,1) 7%,rgba(255,255,173,1) 50%,rgba(255,255,221,1) 93%); /* IE10+ */
+         /* background: linear-gradient(to right,  rgba(255,255,221,1) 7%,rgba(255,255,173,1) 50%,rgba(255,255,221,1) 93%); /* W3C */
+         /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffdd', endColorstr='#ffffdd',GradientType=1 ); /* IE6-9 */ 
+
+        background: rgb(0,153,153); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(0,153,153,1) 0%, rgba(255,255,204,1) 13%, rgba(255,255,204,1) 86%, rgba(0,153,153,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,153,153,1)), color-stop(13%,rgba(255,255,204,1)), color-stop(86%,rgba(255,255,204,1)), color-stop(100%,rgba(0,153,153,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(0,153,153,1) 0%,rgba(255,255,204,1) 13%,rgba(255,255,204,1) 86%,rgba(0,153,153,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(0,153,153,1) 0%,rgba(255,255,204,1) 13%,rgba(255,255,204,1) 86%,rgba(0,153,153,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(0,153,153,1) 0%,rgba(255,255,204,1) 13%,rgba(255,255,204,1) 86%,rgba(0,153,153,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(0,153,153,1) 0%,rgba(255,255,204,1) 13%,rgba(255,255,204,1) 86%,rgba(0,153,153,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009999', endColorstr='#009999',GradientType=1 ); /* IE6-9 */
+
+
+
+
+          width: 500px;
+          color: #CC9900; /* Light Brown */
+          padding:5px 0;
+          text-align:center;
+          font-family: cursive; serif;
+          font-size: 22px;
+          margin-top:10px;
+          border: 2px 0px 0px 2px solid #CC9900; /* Light Brown */
+        }
+    /* End Page Header*/
+
+    /* Begin Favorite Cheeses & Dogs*/
+        .span5{
+          /*background: #FFFFCC; /* Cream */
+          background: rgb(0,153,153); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(0,153,153,1) 0%, rgba(255,255,204,1) 13%, rgba(255,255,204,1) 86%, rgba(0,153,153,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,153,153,1)), color-stop(13%,rgba(255,255,204,1)), color-stop(86%,rgba(255,255,204,1)), color-stop(100%,rgba(0,153,153,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(0,153,153,1) 0%,rgba(255,255,204,1) 13%,rgba(255,255,204,1) 86%,rgba(0,153,153,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(0,153,153,1) 0%,rgba(255,255,204,1) 13%,rgba(255,255,204,1) 86%,rgba(0,153,153,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(0,153,153,1) 0%,rgba(255,255,204,1) 13%,rgba(255,255,204,1) 86%,rgba(0,153,153,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(0,153,153,1) 0%,rgba(255,255,204,1) 13%,rgba(255,255,204,1) 86%,rgba(0,153,153,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009999', endColorstr='#009999',GradientType=1 ); /* IE6-9 */
+
+
+          width: 300px;
+          color: #CC9900; /* Light Brown */
+          padding:5px 0;
+          text-align:center;
+          margin-top: 5px;
+          font-family: cursive; serif;
+          font-size: 20px;
+          /*border-radius: 10px;*/
+        }
+    /* End Favorite Cheeses & Dogs*/
+
+    /* Begin Hard/Soft/Bulldogs/Boxers Labels */
+    /*If I want to make a span class different from another with the same number, how do I?*/
+        .span3{
+         /* background: #FFFFCC; /* Cream */
+     background: -moz-linear-gradient(left,  rgba(255,255,204,0) 0%, rgba(255,255,204,0) 1%, rgba(255,255,204,1) 50%, rgba(255,255,204,0) 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,204,0)), color-stop(1%,rgba(255,255,204,0)), color-stop(50%,rgba(255,255,204,1)), color-stop(99%,rgba(255,255,204,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0) 1%,rgba(255,255,204,1) 50%,rgba(255,255,204,0) 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0) 1%,rgba(255,255,204,1) 50%,rgba(255,255,204,0) 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0) 1%,rgba(255,255,204,1) 50%,rgba(255,255,204,0) 99%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,204,0) 0%,rgba(255,255,204,0) 1%,rgba(255,255,204,1) 50%,rgba(255,255,204,0) 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffcc', endColorstr='#00ffffcc',GradientType=1 ); /* IE6-9 */
+
+
+
+
+
+          color: #CC9900; /* Light Brown*/
+          padding:10px 0;
+          text-align:center;
+          margin-top: 10px;
+          margin-right: 300px
+          font-family: cursive; serif;
+          font-size: 16px;
+          /*border-top: solid 5px #9966CC;
+          border-left: #9966CC;
+          border: solid 1px;*/
+          /*border-radius: 10px;*/
+          width:120px;
+          height:10px;
+        }
+    /* End Hard/Soft/Bulldogs/Boxers Labels */
+
+/* END LABEL STYLING */
+
+/* BEGIN MENU STYLING */
+
+    /* Begin Menu */
+        .span2 li{
+          margin-top: 20px;
+          list-style: none;
+          border-bottom: solid 1px #FFCC99; /* Dark Beige */
+        }
+    /* End Menu */
+
+    /* Begin Menu Items*/
+        .span2{
+          /*background: #FFFFCC; /* Cream */
+        background: -moz-linear-gradient(left,  rgba(255,255,204,0) 0%, rgba(255,255,204,0.75) 14%, rgba(255,255,204,0.8) 15%, rgba(255,255,204,1) 19%, rgba(255,255,204,1) 50%, rgba(255,255,204,1) 81%, rgba(255,255,204,0.8) 85%, rgba(255,255,204,0.75) 86%, rgba(255,255,204,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,204,0)), color-stop(14%,rgba(255,255,204,0.75)), color-stop(15%,rgba(255,255,204,0.8)), color-stop(19%,rgba(255,255,204,1)), color-stop(50%,rgba(255,255,204,1)), color-stop(81%,rgba(255,255,204,1)), color-stop(85%,rgba(255,255,204,0.8)), color-stop(86%,rgba(255,255,204,0.75)), color-stop(100%,rgba(255,255,204,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffcc', endColorstr='#00ffffcc',GradientType=1 ); /* IE6-9 */
+
+
+
+
+
+          /* border: solid 2px #FFCC99; /* Dark Beige */
+         /* border-radius: 10px;*/
+          color: #CC9900; /* Light Brown */
+          margin-top: 20px;
+          height: 250px;
+          list-style: none;
+        }
+    /* End Menu Items */
+
+    /* Begin Menu Items List Styling */
+        .span1{
+          margin-top: 10px;
+          /*What's up with my list styles, why don't they work?*/
+          list-style: none;
+        } 
+        
+
+        /*.span1 #bulldog{ /*Bulldog pic I tried to add to bottom of menu
+          width:200px;
+          height:75px;
+          list-style: none;
+        }*/
+    /* End Menu Items List Styling */
+
+/* END MENU STYLING */
+
+/* BEGIN MAIN CONTENT AREA STYLING */
+
+    /* Begin Main Content Area */
+        .span8{
+          /*background: #FFFFCC; /* Cream */
+          /*background: rgb(255,255,221); /* Old browsers */
+         /* background: -moz-linear-gradient(left,  rgba(255,255,221,1) 7%, rgba(255,255,173,1) 50%, rgba(255,255,221,1) 93%); /* FF3.6+ */
+         /* background: -webkit-gradient(linear, left top, right top, color-stop(7%,rgba(255,255,221,1)), color-stop(50%,rgba(255,255,173,1)), color-stop(93%,rgba(255,255,221,1))); /* Chrome,Safari4+ */
+        /*  background: -webkit-linear-gradient(left,  rgba(255,255,221,1) 7%,rgba(255,255,173,1) 50%,rgba(255,255,221,1) 93%); /* Chrome10+,Safari5.1+ */
+         /* background: -o-linear-gradient(left,  rgba(255,255,221,1) 7%,rgba(255,255,173,1) 50%,rgba(255,255,221,1) 93%); /* Opera 11.10+ */
+         /* background: -ms-linear-gradient(left,  rgba(255,255,221,1) 7%,rgba(255,255,173,1) 50%,rgba(255,255,221,1) 93%); /* IE10+ */
+        /*  background: linear-gradient(to right,  rgba(255,255,221,1) 7%,rgba(255,255,173,1) 50%,rgba(255,255,221,1) 93%); /* W3C */
+        /*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffdd', endColorstr='#ffffdd',GradientType=1 ); /* IE6-9 */
+
+        background: -moz-linear-gradient(left,  rgba(255,255,204,0) 0%, rgba(255,255,204,0.75) 14%, rgba(255,255,204,0.8) 15%, rgba(255,255,204,1) 19%, rgba(255,255,204,1) 50%, rgba(255,255,204,1) 81%, rgba(255,255,204,0.8) 85%, rgba(255,255,204,0.75) 86%, rgba(255,255,204,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,204,0)), color-stop(14%,rgba(255,255,204,0.75)), color-stop(15%,rgba(255,255,204,0.8)), color-stop(19%,rgba(255,255,204,1)), color-stop(50%,rgba(255,255,204,1)), color-stop(81%,rgba(255,255,204,1)), color-stop(85%,rgba(255,255,204,0.8)), color-stop(86%,rgba(255,255,204,0.75)), color-stop(100%,rgba(255,255,204,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffcc', endColorstr='#00ffffcc',GradientType=1 ); /* IE6-9 */
+
+
+
+          /*border: solid 2px #FFCC99; /* Dark Beige */
+          /*border-radius: 10px;*/
+          margin-top: 20px;
+          margin-bottom: 15px;
+          height: 500px;
+        }
+    /* End Main Content Area */
+      
+    /* Begin Photo Content Background Color */
+        .span6{
+         /* background-color: white; /* White */ 
+         background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 15%, rgba(255,255,255,1) 19%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 81%, rgba(255,255,255,0.8) 85%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(15%,rgba(255,255,255,0.8)), color-stop(19%,rgba(255,255,255,1)), color-stop(20%,rgba(255,255,255,1)), color-stop(50%,rgba(255,255,255,1)), color-stop(80%,rgba(255,255,255,1)), color-stop(81%,rgba(255,255,255,1)), color-stop(85%,rgba(255,255,255,0.8)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 15%,rgba(255,255,255,1) 19%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 81%,rgba(255,255,255,0.8) 85%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 15%,rgba(255,255,255,1) 19%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 81%,rgba(255,255,255,0.8) 85%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 15%,rgba(255,255,255,1) 19%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 81%,rgba(255,255,255,0.8) 85%,rgba(255,255,255,0) 100%); /* IE10+ */
+        background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 15%,rgba(255,255,255,1) 19%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 81%,rgba(255,255,255,0.8) 85%,rgba(255,255,255,0) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+          margin-top: 20px;
+          margin-bottom: 1px;
+          width:550px;
+          height: 180px;
+          /*border: solid 1px 0 #CC9900 ; /* Dark Beige */
+        }
+    /* End Photo Content Background Color */
+
+    /* Begin Photo Content Border */
+    /* .double{
+      border-style: double;
+      border: solid 2px #CC9900;
+    }*/
+
+    /* Begin Photo Content Right Margin */
+        .span6 ul li{
+          margin-right:10px;
+        }
+    /* End Photo Content Right Margin */
+
+    /* Begin Photo Content Image Rounding */
+       /* .img-rounded{
+          width:120px;
+          height:120px;
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+    /* End Photo Content Image Rounding */
+
+        .groove{
+          border-style: groove;
+          border: solid 2px #CC9900;
+          width:120px;
+          height:120px;
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+
+    /* Begin Cheese Photo Labels */
+        #cheeselist{
+          width: 550px;
+          height: 20px;
+          margin-top:0px;
+          background: none;
+          border: none;
+          margin-left: 90px;
+         color: #CC9900; /* Light Brown */
+          }
+    /* End Cheese Photo Labels */
+
+    /* Begin Dog Photo Labels */
+        #doglist{
+          width: 550px;
+          height: 20px;
+          margin-top:0px;
+          background: none;
+          border: none;
+          margin-left: 70px;
+          color: #CC9900; /* Light Brown */
+          }
+    /* End Dog Photo Labels */
+
+    /* Begin Cheese Photo Label Positioning */
+         #cheeselist ul li{
+          margin-left: 115px;
+          margin-top:5px;
+        } 
+    /* End Cheese Photo Label Positioning */
+
+    /* Begin Dog Photo Label Positioning */
+         #doglist ul li{
+          margin-left: 115px;
+          margin-top:5px;
+        } 
+    /* End Dog Photo Label Positioning */
+
+/* END MAIN CONTENT AREA STYLING */
+
+/* BEGIN FOOTER STYLING */
+
+    /* Begin Footer Styling */
+        #footer{
+          /*background: #00CCCC; /* Light Turquoise */
+          background: -moz-linear-gradient(left,  rgba(255,255,204,0) 0%, rgba(255,255,204,0.75) 14%, rgba(255,255,204,0.8) 15%, rgba(255,255,204,1) 19%, rgba(255,255,204,1) 50%, rgba(255,255,204,1) 81%, rgba(255,255,204,0.8) 85%, rgba(255,255,204,0.75) 86%, rgba(255,255,204,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,204,0)), color-stop(14%,rgba(255,255,204,0.75)), color-stop(15%,rgba(255,255,204,0.8)), color-stop(19%,rgba(255,255,204,1)), color-stop(50%,rgba(255,255,204,1)), color-stop(81%,rgba(255,255,204,1)), color-stop(85%,rgba(255,255,204,0.8)), color-stop(86%,rgba(255,255,204,0.75)), color-stop(100%,rgba(255,255,204,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,255,204,0) 0%,rgba(255,255,204,0.75) 14%,rgba(255,255,204,0.8) 15%,rgba(255,255,204,1) 19%,rgba(255,255,204,1) 50%,rgba(255,255,204,1) 81%,rgba(255,255,204,0.8) 85%,rgba(255,255,204,0.75) 86%,rgba(255,255,204,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffcc', endColorstr='#00ffffcc',GradientType=1 ); /* IE6-9 */
+
+
+          width: 980px;
+          height:10px;
+          color: #CC9900; /* Light Brown */
+          padding:10px 0;
+          font-family: cursive; serif;
+          font-size: 12px;
+          border-radius: 10px;
+          margin-bottom: 10px;
+        }
+    /* End Footer Styling */
+
+/* END FOOTER STYLING */
+
+    </style>
+<!--End Styles-->
+
+  </head>
+<!--End HEAD-->
+  
+<!--Begin BODY-->
+  <body>
+<!--Begin CONTAINER-->
+    <div class="container">
+
+<!--Begin HEADER-->
+        <div class="row">
+          <div class="span12 offset4 ridge">I Love Cheese & Dogs</div>
+        </div>
+<!--End HEADER-->
+
+        <div class="row">
+          <div class="span5 offset3 ridge">My Favorite Cheeses
+              <div class="dropdown">
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <li><a tabindex="-1" href="#">Action</a></li>
+                  <li><a tabindex="-1" href="#">Another action</a></li>
+                  <li><a tabindex="-1" href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="span5 ridge">My Favorite Dogs</div>
+        </div>
+
+        <div class="row">
+          <div class="span3 offset4 ridge">Hard</div>
+          <div class="span3 ridge">Soft</div>
+          <div class="span3 ridge">Bulldogs</div>
+          <div class="span3 ridge">Boxers</div>
+        </div>
+
+<!--Begin Side Bar Menu-->
+        <div class="row">
+          <div class="span2 offset1">
+
+            <div class="span1">
+              <ul>
+                <li><a href="file:///Users/jbradley/Desktop/bootstrap/CheeseDog-Home">Home</a></li>
+                <li><a href="file:///Users/jbradley/Desktop/bootstrap/CheeseDog-Cheese">Cheese</a></li>
+                <li><a href="file:///Users/jbradley/Desktop/bootstrap/CheeseDog-%20Dogs">Dogs</a></li>
+                <li><a href=" file:///Users/jbradley/Desktop/bootstrap/Contact-Info">Contact</a></li>
+                <li><a href="file:///Users/jbradley/Desktop/bootstrap/CheeseDog-Feedback">Feedback</a></li>
+              </ul>
+            </div>
+          </div>
+<!--End Side Bar Menu-->
+
+<!--Begin Main Content Area-->
+          <div class="span8">
+
+<!--Cheese Pics-->
+            <div class="row">
+              <div class="span6 offset1">
+                <ul class="inline">
+                  <li><img class="groove" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7wwQxD6DhlMxJRDCOLG7q9LVz6vINUY3pHJSztgVXF1nXhLXSig"></li>
+                  <li><img class=" groove" src="https://si0.twimg.com/profile_images/1752015764/Bath_soft_cheese_signature.jpg"></li>
+                  <li><img class=" groove" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKRb6Z18zkvX7rEGAu1zIlFUmIdq73VubLTrXUKoeoKpbESFjDjQ"></li>
+                </ul>
+              </div>
+            </div>
+<!--Cheese Pics-->
+<!--Cheese List-->
+            <div class="row">
+              <div class="span6 offset1" id="cheeselist">
+                <ul class="inline">
+                  <li>Hard</li>
+                  <li>Soft</li>
+                  <li>All</li>
+                </ul>
+              </div>
+            </div>
+<!--Cheese List-->
+
+<!--Dogs Pics-->
+            <div class="row">
+              <div class="span6 offset1">
+                <ul class="inline">
+                  <li><img class=" groove" src="http://31.media.tumblr.com/tumblr_llk4gszCb71qa3r65o1_500.jpg"</li>
+                  <li><img class=" groove" src="http://thumbs.dreamstime.com/z/two-cute-boxers-16870505.jpg"</li>
+                  <li><img class=" groove" src="http://www.dogjing.com/images/puppies-and-cats-dogs-puppies-and-cats-dogjing-dot-com.jpg"</li>
+                </ul>
+              </div>
+            </div>
+<!--Dogs Pics-->
+<!--Dog List-->
+            <div class="row">
+              <div class="span6 offset1" id="doglist">
+                <ul class="inline">
+                  <li>Bulldogs</li>
+                  <li>Boxers</li>
+                  <li>All</li>
+                </ul>
+              </div>
+            </div>
+<!--Dog List-->
+
+          </div>
+        </div>
+
+<!--End Main Content Area-->
+
+<!--Begin FOOTER-->
+    <div class="row">
+      <div class="span12 offset1" id="footer">Footer
+      </div>
+    </div>
+<!--End FOOTER-->
+
+    </div>
+<!--End CONTAINER-->
+
+<!--Bootstrap JS &JQ-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+<!--Bootstrap JS &JQ-->
+
+  </body>
+<!--End BODY-->
+</html>
